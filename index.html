@@ -238,29 +238,7 @@
         gap: 10px;
         transition: filter 0.2s;
       }
-      .tweet-card.filtered {
-        position: relative;
-        pointer-events: none;
-        user-select: none;
-        filter: brightness(0.6) grayscale(0.2);
-      }
-      .tweet-card.filtered::after {
-        content: "";
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0,0,0,0.6);
-        border-radius: 16px;
-        pointer-events: none;
-        z-index: 2;
-      }
-      .tweet-card.filtered:hover {
-        filter: none;
-        pointer-events: auto;
-        user-select: auto;
-      }
-      .tweet-card.filtered:hover::after {
-        background: none;
-      }
+      /* .tweet-card.filtered: no blur/brightness/overlay effect, keep as normal card */
       .tweet-header {
         display: flex;
         align-items: center;
